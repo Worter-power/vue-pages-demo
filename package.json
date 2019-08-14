@@ -1,9 +1,13 @@
 {
-    "name": "mythree",
+    "name": "vue-pages-demo",
     "version": "1.0.0",
     "description": "A Vue.js project",
     "author": "",
-    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Worter-power/vue-pages-demo.git"
+    },
+    "homepage": "https://github.com/Worter-power/vue-pages-demo",
     "scripts": {
         "sync": "node server/modules/sync.js",
         "start": "node server/index.js",
