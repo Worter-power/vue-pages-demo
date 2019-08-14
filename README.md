@@ -1,23 +1,28 @@
-# XXX(组件名)
+# vue-pages-demo
 
 ## 概述
-
+采用koa2，vue全家桶实现全栈项目。
 ...
 
-## vue-pages-demo
+## 初始化项目依赖
 
-npm install --save ...
+npm install
 
-## Usage(使用)
+## 启动后台
 
-...
+npm run start
 
-... 其他内容 ...
+## 启动前端
 
-## Donation
+npm run dev
 
-...
+## mysql 数据库配置
 
-## Contact me(联系我)
-
-...
+./server/config/config.js
+    module.exports = {
+        database: 'xxxx', // 使用哪个数据库
+        username: 'xxxx', // 用户名
+        password: 'xxxx', // 口令
+        host: 'x.x.x.x', // 主机名
+        port: 3306 // 端口号，MySQL默认3306
+    };
