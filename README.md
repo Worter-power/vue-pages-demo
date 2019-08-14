@@ -1,22 +1,22 @@
 # vue-pages-demo
 
-## 概述
+### 概述
 采用koa2，vue全家桶实现全栈项目。
 ...
 
-## 初始化项目依赖
+### 初始化项目依赖
 
 npm install
 
-## 启动后台
+### 启动后台
 
 npm run start
 
-## 启动前端
+### 启动前端
 
 npm run dev
 
-## mysql 数据库配置
+### mysql 数据库配置
 
 ./server/config/config.js
 ``` javascript
@@ -28,3 +28,5 @@ npm run dev
         port: 3306 // 端口号，MySQL默认3306
     };
 ```
+
+### 个性化
