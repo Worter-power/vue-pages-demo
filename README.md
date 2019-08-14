@@ -19,6 +19,7 @@ npm run dev
 ## mysql 数据库配置
 
 ./server/config/config.js
+``` javascript
     module.exports = {
         database: 'xxxx', // 使用哪个数据库
         username: 'xxxx', // 用户名
@@ -26,3 +27,4 @@ npm run dev
         host: 'x.x.x.x', // 主机名
         port: 3306 // 端口号，MySQL默认3306
     };
+```
