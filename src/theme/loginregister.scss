@@ -1,0 +1,102 @@
+@import "./var.scss";
+.login {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    overflow: auto;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        min-height: 100%;
+        &.fadeInDown {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+        #formContent {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: #fff;
+            width: 80%;
+            max-width: 350px;
+            position: relative;
+            padding: 25px 0;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+            text-align: center;
+            line-height: 32px;
+            >li {
+                padding: 15px 0;
+                &.ha-login-header {
+                    span {
+                        display: inline-block;
+                        font-weight: 700;
+                        padding: 0 18px;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        font-size: $font-size-h2;
+                        &.active {
+                            color: $--color-primary;
+                        }
+                        &:hover {
+                            background-color: $--color-lightBackground;
+                        }
+                    }
+                }
+                &.ha-login-icon {
+                    >img {
+                        width: 70%;
+                    }
+                }
+                &.ha-login-form {
+                    padding: 0 20px;
+                    .el-input__inner {
+                        border: 1px solid $rc-backgound-color;
+                        text-align: center;
+                        border-radius: 0;
+                        background-color: $rc-backgound-color;
+                        &:focus {
+                            background-color: #fff;
+                            border-bottom-color: $--color-primary;
+                        }
+                        &:hover {
+                            background-color: #fff;
+                        }
+                    }
+                    .el-form-item__error {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

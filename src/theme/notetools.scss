@@ -1,0 +1,53 @@
+@import "./var.scss";
+.notetools {
+    .notetools-left {
+        width: 200px;
+        box-sizing: border-box;
+        height: 100%;
+        position: relative;
+        overflow: auto;
+        background-color: #fff;
+        border-right: 1px solid $--color-info;
+    }
+    .notetools-content {
+        position: absolute;
+        right: 0;
+        line-height: 1.5em;
+        left: 200px;
+        top: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        &::after {
+            content: '';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+        >div {
+            min-height: 100%;
+            box-sizing: border-box;
+            float: left;
+            &.notetools-text-content {
+                width: 700px;
+                padding: 30px;
+                background-color: $--color-background;
+                .custom-underline {
+                    border-bottom: 1px solid #f00;
+                    font-style: normal;
+                }
+                .nite-writer-pen {
+                    background-color: lightgreen;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px lightgreen;
+                    font-style: normal;
+                }
+            }
+            &.notetools-text-info {
+                border: 1px solid $--color-warning;
+                border-radius: $border-radius-small;
+                padding: 30px;
+                width: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@import "./var.scss";
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Microsoft Yahei' !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    color: #2c3e50;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F5F6F8;
+    position: relative;
+    .app-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+        overflow: overlay;
+        $bottom-h: 26px;
+        $top-h: 61px;
+        .app-container-header {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: $top-h;
+        }
+        .app-container-body {
+            position: absolute;
+            width: 100%;
+            bottom: $bottom-h;
+            left: 0;
+            top: $top-h;
+            background-color: $--color-background;
+        }
+        .app-container-footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            height: $bottom-h;
+            background-color: $text-base-color;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .1);
+}
+
+.icon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -0.3em;
+    fill: currentColor;
+    overflow: hidden;
+}
